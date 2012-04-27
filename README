@@ -14,7 +14,7 @@ CarryObjects -- robot collects objects in one corner of the table and
                 algorithm is used for path resolution, like the one in
                 fasr.world example from Stage.
 
-Questions and patches send to: dimula73@gmail.com
+Please send questions and patches to: dimula73@gmail.com
 
 Good luck with learning Player/Stage!
 Dmitry Kazakov
