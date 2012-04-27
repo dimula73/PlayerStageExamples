@@ -1,0 +1,67 @@
+include "../thirdparty/map.inc"
+
+interval_sim 10
+threads 2
+
+floorplan
+(
+  bitmap "../thirdparty/cave.png"
+  size [12 12 1]
+)
+
+# configure the GUI window
+window
+(
+  size [700.000 700.000]
+  scale 50
+)
+
+include "../thirdparty/crazybob.inc"
+include "../thirdparty/sick.inc"
+
+crazybob
+(
+  name "bob1"
+  pose [5 5 0 180]
+  color "green"
+  
+  sicklaser( pose [ 0.5 0 0 0 ] )
+
+  # report error-free position in world coordinates
+  localization "gps"
+  localization_origin [ 0.5 0 0 0 ]
+)
+
+define ghost model
+(
+    bitmap "../thirdparty/ghost.png"
+    size [0.20 0.20 0.20]
+    color "orange"
+    ranger_return 0
+    obstacle_return 0
+)
+
+ghost
+(
+    name "ghost1"
+    pose [4 4 0 0]
+)
+
+ghost
+(
+    name "ghost2"
+    pose [-1.5 5 0 0]
+)
+
+ghost
+(
+    name "ghost3"
+    pose [0 2 0 0]
+)
+
+ghost
+(
+    name "ghost4"
+    pose [-2 1 0 0]
+)
+
