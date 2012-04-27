@@ -1,0 +1,21 @@
+Player/Stage Examples
+
+This repository contains three simple programs, which can control a
+robot modelled by Stage using Player's C++ interface. The test
+programs are the following:
+
+SimpleDumpData -- connects to the robot and reads some data from it
+
+SimpleWander -- robot wanders through the stage and kills all the
+                ghosts it finds on it's way.
+
+CarryObjects -- robot collects objects in one corner of the table and
+                brings them to the other. The simple gradient
+                algorithm is used for path resolution, like the one in
+                fasr.world example from Stage.
+
+Questions and patches send to: dimula73@gmail.com
+
+Good luck with learning Player/Stage!
+Dmitry Kazakov
+
